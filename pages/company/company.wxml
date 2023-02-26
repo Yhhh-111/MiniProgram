@@ -1,0 +1,30 @@
+<!--pages/company/company.wxml-->
+<view class="container">
+	<view class="step-wrap">
+		<steps currentStep="{{2}}"></steps>
+	</view>
+
+	<view class="company-info-wrap">
+		<view class="tip large">企业营业执照上传：</view>
+		<view class="company-license-wrap">
+			<image src="https://img0.baidu.com/it/u=922902802,2128943538&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" class="company-license-img" bindtap="uploadImg"></image>
+		</view>
+		<view class="tip second">拍照时请保持照片完整，图像清洗。</view>
+		<view class="info">
+			<van-cell-group class="info-item">
+				<van-field label="企业名称" value="{{ companyName }}" placeholder="请输入" clearable bind:change="onChange" />
+			</van-cell-group>
+			<van-cell-group class="info-item">
+				<van-field label="证照类型" value="{{ type }}" placeholder="请输入" clearable bind:change="onChange" />
+			</van-cell-group>
+			<van-cell-group class="info-item">
+				<van-field label="社会统一信用代码" value="{{ creditCode }}" placeholder="请输入" clearable bind:change="onChange" />
+			</van-cell-group>
+		</view>
+	</view>
+
+	<view class="btn-wrap">
+		<van-button class="btn pret-btn" color="#F8F8F8" round block bindtap="pretStep">上一步</van-button>
+		<van-button class="btn" color="#0C9EF9" round block bindtap="nextStep">下一步</van-button>
+	</view>
+</view>

@@ -1,0 +1,58 @@
+/* pages/face/face.wxss */
+.container {
+  padding: 0 0.8rem;
+}
+
+.face-check .theme {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.face-check .carme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.8rem 0;
+}
+
+.face-check .carme .face-camera {
+  width: 80%;
+  height: 16rem;
+}
+
+.face-check .tip {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #D9D9D9;
+}
+
+.face-check .pro {
+  margin-top: 1.2rem;
+}
+
+.face-check .pro .van-checkbox {
+  align-items: flex-start;
+}
+
+.face-check .pro .strong {
+  color: #0C9EF9;
+}
+
+.btn-wrap {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-wrap .btn {
+  width: 50%;
+}
+
+.btn-wrap .pret-btn {
+  margin-right: 0.8rem;
+}
+
+.btn-wrap .pret-btn .van-button__text {
+  color: #0C9EF9;
+}

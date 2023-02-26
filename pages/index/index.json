@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "steps": "../../components/steps/steps",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index" ,
+    "ocr-navigator": "plugin://ocr-plugin/ocr-navigator"
+  }
+}

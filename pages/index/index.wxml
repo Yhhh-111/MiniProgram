@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="step-wrap">
+		<steps currentStep="{{0}}"></steps>
+	</view>
+
+	<view class="idcard-wrap">
+		<image src="https://img0.baidu.com/it/u=922902802,2128943538&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" class="idcard" bindtap="uploadImg"></image>
+		<image src="https://img0.baidu.com/it/u=922902802,2128943538&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" class="idcard" bindtap="uploadImg"></image>
+	</view>
+
+    <ocr-navigator bind:onSuccess="success" certificateType="idCard" opposite="{{false}}">
+      <button type="primary">身份证正面识别</button>
+    </ocr-navigator>
+
+  
+	<view class="info-wrap">
+		<van-cell-group class="info-item">
+			<van-field label="企业法定代表人姓名" value="{{ name }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="证件类型" value="{{ type }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="身份证号码" value="{{ idNum }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="电话号码" value="{{ tel }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item numcode">
+			<!-- <van-field label="数字验证码" value="{{ numCode }}" placeholder="请输入" clearable bind:change="onChange" /> -->
+			<van-field
+				value="{{ numCode }}"
+				type="number"
+				center
+				clearable
+				label="数字验证码"
+				placeholder="请输入"
+				use-button-slot
+			>
+				<image slot="right-icon" src="https://img0.baidu.com/it/u=922902802,2128943538&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" class="numcode-img" bindtap="getNumCode"></image>
+			</van-field>
+		</van-cell-group>
+		<van-cell-group class="info-item msg-code">
+			<van-field
+				value="{{ msgCode }}"
+				type="number"
+				center
+				clearable
+				label="短信验证码"
+				placeholder="请输入"
+				use-button-slot
+			>
+				<van-button slot="button" size="small" type="primary" color="#0C9EF9" bindtap="getMsgCode">
+					发送验证码
+				</van-button>
+			</van-field>
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="银行卡类型" value="{{ bankCardType }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="银行卡号" value="{{ bankCardNum }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="受理网点" value="{{ bankAddr }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+		<van-cell-group class="info-item">
+			<van-field label="婚姻状态" value="{{ marryStatus }}" placeholder="请输入" clearable bind:change="onChange" />
+		</van-cell-group>
+	</view>
+
+	<view class="btn-wrap">
+		<van-button color="#0C9EF9" round block bindtap="nextStep">下一步</van-button>
+	</view>
+</view>

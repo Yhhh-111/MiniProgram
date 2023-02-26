@@ -1,0 +1,62 @@
+/* pages/company/company.wxss */
+.container {
+  padding: 0 0.8rem;
+}
+
+.company-info-wrap {
+  margin-top: 1.6rem;
+}
+
+.company-info-wrap .tip {
+  color: #B7B7B7;
+}
+
+.company-info-wrap .company-license-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.8rem 0 0.8rem 0;
+}
+
+.company-info-wrap .tip.large {
+  font-size: 1.2rem;
+}
+
+.company-info-wrap .tip.second {
+  text-align: center;
+}
+
+.company-info-wrap .info {
+  margin-top: 1.6rem;
+}
+
+.company-info-wrap .info-item {
+  margin-top: 1.2rem;
+}
+
+.company-info-wrap .info-item .van-field__label {
+  width: 12rem;
+}
+
+.company-info-wrap .info-item .van-field__body {
+  width: 5rem;
+  float: right;
+}
+
+.btn-wrap {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-wrap .btn {
+  width: 50%;
+}
+
+.btn-wrap .pret-btn {
+  margin-right: 0.8rem;
+}
+
+.btn-wrap .pret-btn .van-button__text {
+  color: #0C9EF9;
+}

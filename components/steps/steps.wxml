@@ -1,0 +1,6 @@
+<!--components/steps/steps.wxml-->
+<view class="container">
+	<view class="step-wrap">
+		<van-steps steps="{{ steps }}" active="{{currentStep}}" active-color="{{ active }}" inactive-color="{{inactive}}" />
+	</view>
+</view>

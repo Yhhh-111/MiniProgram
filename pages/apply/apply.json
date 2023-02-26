@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "steps": "../../components/steps/steps",
+    "van-field": "@vant/weapp/field/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

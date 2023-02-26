@@ -1,0 +1,23 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+.step-wrap .van-step--finish .van-step__title view {
+  color: #94D5FC;
+}
+/** wxss **/
+/*自定义按钮样式*/
+.ocr-wrapper {
+  margin: 40rpx auto !important;
+  width: 375rpx !important;
+}
+.intro {
+  margin: 40rpx !important;
+}

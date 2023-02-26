@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/face/face",
+    "pages/company/company",
+    "pages/apply/apply"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black" 
+  },
+  "sitemapLocation": "sitemap.json" ,
+  "plugins": {
+    "ocr-plugin": {
+      "version": "3.1.5",
+      "provider": "wx4418e3e031e551be"
+    }
+  }
+}

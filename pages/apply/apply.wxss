@@ -1,0 +1,49 @@
+/* pages/apply/apply.wxss */
+.container {
+  padding: 0 0.8rem;
+}
+
+.apply-info-wrap .info-item {
+  margin-top: 1.2rem;
+}
+
+.apply-info-wrap .info-item .van-field__label {
+  width: 12rem;
+}
+
+.apply-info-wrap .info-item .van-field__body {
+  width: 5rem;
+  float: right;
+}
+
+.pro-wrap {
+  margin-top: 1.6rem;
+  padding: 0 1rem;
+}
+
+.pro-wrap .van-checkbox {
+  align-items: flex-start;
+}
+
+.pro-wrap .strong {
+  color: #0C9EF9;
+}
+
+
+.btn-wrap {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-wrap .btn {
+  width: 50%;
+}
+
+.btn-wrap .pret-btn {
+  margin-right: 0.8rem;
+}
+
+.btn-wrap .pret-btn .van-button__text {
+  color: #0C9EF9;
+}

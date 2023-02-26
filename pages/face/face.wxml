@@ -1,0 +1,25 @@
+<!--pages/face/face.wxml-->
+<view class="container">
+	<view class="step-wrap">
+		<steps currentStep="{{1}}"></steps>
+	</view>
+
+	<view class="face-check">
+		<view class="theme">人脸识别</view>
+		<view class="carme">
+			<!-- 识别部分 -->
+			<!-- <camera device-position="front" flash="off" class="face-camera" bindtap="takePhoto"></camera> -->
+		</view>
+		<view class="tip">
+			请正对手机，保持光亮充足
+		</view>
+		<view class="pro">
+			<van-checkbox value="{{ proChecked }}" bind:change="proCheck">本人已阅读并同意签署<text class="strong">《上海农商银行人脸识别信息保护协议》</text></van-checkbox>
+		</view>
+	</view>
+
+	<view class="btn-wrap">
+		<van-button class="btn pret-btn" color="#F8F8F8" round block bindtap="pretStep">上一步</van-button>
+		<van-button class="btn" color="#0C9EF9" round block bindtap="nextStep">开始识别</van-button>
+	</view>
+</view>
